@@ -1,2 +1,4 @@
-# devops-lab-challenge-solution
-My solution for devops-lab-challenge I created!
+# DevOps End-to-End Project - Solution
+
+## **Overview**  
+This is my solution for this lab -> https://github.com/jocasantos/devops-full-project
