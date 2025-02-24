@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  backend:
+    build: 
+      context: ./backend/PyTodoBackendMonolith
+    env_file: 
+      - .env
+    ports:
+      - "8000:8000"
+
+ # Frontend service (React app with Nginx)
+  frontend:
+    build:
+      context: ./frontend/ReactTodoUIMonolith
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
